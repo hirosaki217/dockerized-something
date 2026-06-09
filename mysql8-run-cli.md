@@ -1,4 +1,4 @@
-#create folder mounted
+# create folder mounted
 ```bash
 mkdir -p ~/docker/mysql8-data
 mkdir -p ~/docker/mysql8-conf
@@ -6,7 +6,7 @@ sudo chown -R 999:999 ~/docker/mysql8-data
 sudo chmod -R 777 ~/docker/mysql8-data
 ```
 
-#file my.inf
+# file my.inf
 ```bash
 [mysqld]
 lower_case_table_names=1
@@ -24,6 +24,7 @@ bind-address=0.0.0.0
 socket=/var/run/mysqld/mysqld.sock
 ```
 
+# run
 ```bash
 docker stop mysql8 2>/dev/null
 docker rm mysql8 2>/dev/null
